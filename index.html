@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Calculator</title>
+    <link rel="stylesheet" href="CalStyles.css">
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            border: 1px solid red;
+        } */
+/* @media (max-width:600px){
+    h1{
+        height: 40px; width: 100px;
+    }
+} */
+
+
+
+h1{
+   margin-left: 2px; color: white;
+    /* padding: 15px 0px 15px 0px; */
+   background-color: rgb(0, 110, 59);
+}
+
+.container{
+    border: solid black 2px; 
+    border-radius: 20px;
+    width:50vh;
+     height: 70vh; font-size: 40px; 
+    margin-left: 50px; text-align: center; background-color: rgb(250, 247, 247);
+}
+/* @media (max-width:500){
+    .container{
+        
+        width: 100%;
+    }
+} */
+/* .main{
+    width: 100%;
+    justify-content: center;
+    margin: 5px;
+    border: 1px solid red;
+} */
+.screen{
+    /* border: solid blue 4px; */
+    text-align: right;
+    position: relative;
+    /* border-radius: 10px; */
+    margin: 5px;
+    width: 85%;
+    left: 0;
+    border: 15px groove rgb(202, 202, 216);
+     /* height: vh; */
+    background-color: powderblue;
+    /* margin-left: 0.5px; */
+     /* margin-top: 10px; */
+      /* font-size: 35px; */
+}
+.buttonb{
+    /* border-radius: 20px;  */
+    /* border: solid grey 0.1px; */
+    background-color: rgb(177, 176, 176); 
+    box-shadow: 0.5px 1px;
+    margin-left: 5px;
+    width: 48vh;
+}
+.ac{
+    border: solid grey 1px; font-size: 35px;
+    /* width:10px; height: 45px; */
+    border-radius: 20%; box-shadow: 2px 3px;
+    /* margin: 30px 0px 0px 0px; */
+    background-color: orange;
+    
+}
+ .ce{
+    border: solid grey 1px; 
+    /* margin: -48px 0px 0px px; */
+    /* width: 60px; height: 45px;  */
+    background-color: orange;
+    border-radius: 20%; box-shadow: 2px 3px; font-size: 35px;
+}
+
+.per{
+    border: solid grey 1px; font-size: 35px;
+    /* width: 60px; height: 45px;  */
+    background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px;
+}
+.divd{
+    border: solid grey 1px; font-size: 35px;
+    /* width: 60px; height: 45px;  */
+    background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px;
+}
+
+.seven{
+    border: solid grey 1px; 
+    /* margin: 15px 0px 0px 0px; */
+    /* width: 60px; height: 45px; */
+    
+    background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px; 
+    font-size: 35px;
+}
+
+.eight{
+    border: solid grey 1px; font-size: 35px;
+    
+    /* width: 60px; height: 45px;  */
+    background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px;
+}
+
+.nine{
+    border: solid grey 1px; font-size: 35px;
+    /* width: 60px; height: 45px;  */
+    background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px;
+}
+.multi{
+    border: solid grey 1px; font-size: 35px;
+    /* width: 60px; height: 45px;  */
+    background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px;
+}
+.four{
+    border: solid grey 1px; margin: 15px 0px 0px 0px;
+    width: 60px; height: 45px; background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px; font-size: 35px;
+}
+.five{
+    border: solid grey 1px; font-size: 35px;
+    width: 60px; height: 45px; background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px;
+}
+.six{
+    border: solid grey 1px; font-size: 35px;
+    width: 60px; height: 45px; background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px;
+}
+.mins{
+    border: solid grey 1px; font-size: 35px;
+    width: 60px; height: 45px; background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px;
+}
+
+.one{
+    border: solid grey 1px; margin: 15px 0px 0px 0px;
+    width: 60px; height: 45px; background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px; font-size: 35px;
+    position: relative;bottom: 35px;
+}
+ .two{
+    border: solid grey 1px; font-size: 35px;
+    width: 60px; height: 45px; background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px;
+   position: relative;bottom: 35px;
+}
+
+.three{
+    border: solid grey 1px;
+    width: 60px; height: 45px; background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px;
+    position: relative;bottom: 35px; font-size: 35px;
+}
+
+.plus{
+    border: solid grey 1px; font-size: 35px;
+    width: 60px; height: 110px; background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px;
+    margin-top: 15px;
+}
+
+
+#pluss{
+    margin-top: 16px;
+}
+.zero{
+    border: solid grey 1px; margin: 15px 0px 0px 0px;
+    width: 60px; height: 45px; background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px;
+    position: relative;bottom: 64px;right: 34px; font-size: 35px;
+}
+.point{
+    border: solid grey 1px; font-size: 35px;
+    width: 60px; height: 45px; background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px;
+    position: relative;bottom: 64px;right: 34px;
+}
+.equal{
+    border: solid grey 1px; font-size: 35px;
+    width: 60px; height: 45px; background-color: white;
+    border-radius: 20%; box-shadow: 2px 3px;
+    position: relative;bottom: 64px;right: 34px;
+}
+.row{
+    /* position: absolute; */
+    display: inline-block;
+    margin-top: -10px;
+    padding-top: -20px;
+}
+
+    </style>
+
+</head>
+
+<body>
+<center>
+<h1 align="center">Calculator by Ashish Gupta</h1>
+<br><br>
+
+<div class="container">
+         <div class="main"> 
+            <form name="cal">
+            <input type="text" readonly class="screen" name="display"></div>
+            <div class="buttonb">
+            <div class="row">
+                <input type="button" class="ac" value="AC" onclick="cal.display.value= ''">
+                <input type="button" class="ce" value="CE" onclick="cal.display.value= '0'">
+                <input type="button" class="per" value="%" onclick="cal.display.value+='%'">
+                <input type="button" class="divd" value="/" onclick="cal.display.value+='/'">
+            </div>
+            
+            <div class="row">
+                <input type="button" class="seven" value="7" onclick="cal.display.value+='7'">
+                <input type="button" class="eight" value="8" onclick="cal.display.value+='8'">
+                <input type="button" class="nine" value="9" onclick="cal.display.value+='9'">
+                <input type="button" class="multi" value="*" onclick="cal.display.value+='*'">
+            
+            </div>
+            
+            <div class="row">
+                <input type="button" class="four" value="4" onclick="cal.display.value+='4'">
+                <input type="button" class="five" value="5" onclick="cal.display.value+='5'">
+                <input type="button" class="six" value="6" onclick="cal.display.value+='6'">
+                <input type="button" class="mins" value="-" onclick="cal.display.value+='-'">
+            </div>
+            
+            <div class="row">
+                <input type="button" class="one" value="1" onclick="cal.display.value+='1'">
+                <input type="button" class="two" value="2" onclick="cal.display.value+='2'">
+                <input type="button" class="three" value="3" onclick="cal.display.value+='3'">
+                <input type="button" class="plus" id="pluss" value="+" onclick="cal.display.value+='+'">
+            </div>
+            
+            <div class="row">
+                <input type="button" class="zero" value="0" onclick="cal.display.value+='0'">
+                <input type="button" class="point" value="." onclick="cal.display.value+='.'">
+                <input type="button" class="equal" value="=" onclick="cal.display.value = eval(cal.display.value)">
+            </div>
+            
+        </div>
+</div>         
+
+
+
+
+
+
+
+</center>
+</form>
+</body>
+</html>
